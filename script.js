@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#boton").click(function () {
         param = document.querySelector("#ID").value;
         $.ajax({
-            url: "https://jsonplaceholder.typicode.com/comments?",
+            url: "https://jsonplaceholder.typicode.com/comments",
             type: "GET",
             data: `postId=${param}`,
             success: function (data) {
